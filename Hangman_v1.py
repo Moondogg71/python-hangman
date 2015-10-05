@@ -10,7 +10,7 @@ guessed_letters = ''#Empty Container that will be filled with letters guessed
 
 
 def play():
-    print "Let's play Hangman"
+    print "Let's play Hangman!!!"
     word = pick_a_word()#Variable that is assigned to Function pick_a_word
     #MAIN LOOP OF THE GAME
     while True:
