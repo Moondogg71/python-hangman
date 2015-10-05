@@ -4,7 +4,12 @@ import random
 
 #global variables
 
-f = open("hangman_words.txt")
+try:
+    f = open("hangman_words.txt")
+    words = f.read().splitlines()
+    f.close
+except IOError:
+    print "cannot find file 'Hangman'"
 
 words = ["chicken", "dog", "cat", "mouse", "frog", "horse", "skunk", "bigfoot"]
 lives_remaining = 14
